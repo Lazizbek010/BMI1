@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    border: 33px ridge transparent;
+    height: 100vh;
+    border-color: rgba(4, 255, 201, 0.418);
+}
+.bg-header{
+    background: linear-gradient( to left, red, rgb(0, 255, 221), blue);
+}
+.header{
+    text-align: center;
+    color: rgb(33, 219, 0);
+    font-size: 50px;
+    padding: 15px 0;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.bmi{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+.bmi-right{
+    width: 65%;
+} 
+.calculate{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 216, 216);
+    padding: 30px 15px;
+    border-radius: 12px;
+}
+.calculate input{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 195, 255);
+    box-shadow: 0 0 10px 0 rgb(3, 255, 234);
+}
+.calculate input::placeholder{
+    color: red;
+}
+.btn{
+    width: 150px;
+    padding: 10px 0;
+    margin: 0 auto;
+    border: 2px solid rgb(0, 253, 42);
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    box-shadow: 0 0 10px 0 rgb(3, 255, 150);
+}
+.parent-modal{
+    display: none;
+}
+.bg-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    background-color: #fff;
+    padding: 30px;
+    width: 500px;
+    border-radius: 20px;
+    text-align: center;
+}
+.modal h1{
+    font-size: 45px;
+}
+.close-btn{
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: 2px solid coral;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    align-items: flex-end;
+}
+.bmi-img{
+    width: 60%;
+    margin-left: auto;
+    height: 400px;
+}
+.bmi-img img{
+    width: 100%;
+    height: inherit;
+    border-radius: 15px;
+}
+.capitalize{
+    text-transform: capitalize;
+}
